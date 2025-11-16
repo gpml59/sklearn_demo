@@ -12,7 +12,7 @@ import argparse, json, pickle
 
 import pandas as pd
 
-from sklearn import preprocessing, pipeline, multioutput, linear_model, ensemble
+from scikit-learn import preprocessing, pipeline, multioutput, linear_model, ensemble
 from scipy import optimize
 
 class MetaData:
