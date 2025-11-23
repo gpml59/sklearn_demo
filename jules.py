@@ -39,6 +39,7 @@ def _input_transform(input_from_server: str) -> pd.DataFrame:
     }
     """
     data = dict(json.loads(input_from_server))
+    print(f"data est égal à {data}")
     parameters = pd.concat([pd.DataFrame(values['parameters'], index=[key]) for key, values in data.items()])
     responses = pd.concat([pd.DataFrame(values['responses'], index=[key]) for key, values in data.items()])
     return parameters, responses
